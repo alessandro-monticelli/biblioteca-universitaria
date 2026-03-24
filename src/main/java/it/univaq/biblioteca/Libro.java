@@ -1,3 +1,4 @@
+package it.univaq.biblioteca
 public class Libro{
     private String author;
     private String title;
@@ -46,13 +47,33 @@ public class Libro{
         this.author = author;
         this.title = title;
         this.publishedDate = publishedDate;
+        //existing info
     }
-       // override di toString
-    public String toString(){
-        return "L' autore del libro ' "  + this.title + "' é " + this.author + ". Ed é stato publicato il " + this.publishedDate
-                + " con codice ISBN " + this.isbn + "dall'editore " + this.editor; // non sicuro di cosa voglia il prof fermiamoci qui
+    //metodi get e set di tutte le istanze
+    public String getTitle(){
+        return this.title;
     }
-    } 
+    public void setTitle(String title){
+        this.title = title;
+    }
+    //... impostare la java doc do ognuno
+
+    // override di toString
+    public toString() {
+        return "Libro{" +
+                "_abstract='" + _abstract + '\'' +
+                ", price=" + price +
+                ", pages=" + pages +
+                ", language='" + language + '\'' +
+                ", category='" + category + '\'' +
+                ", editor='" + editor + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", publishedDate=" + publishedDate +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
+}
 
 
 
