@@ -1,4 +1,4 @@
-package it.univaq.biblioteca
+package it.univaq.biblioteca;
 public class Libro{
     private String author;
     private String title;
@@ -16,8 +16,8 @@ public class Libro{
      * 
      * @param author
      * @param title
-     * @param publishdDate
-     * @param ISBN 
+     * @param publishedDate
+     * @param isbn
      * @param editor
      * @param category
      * @param language
@@ -59,7 +59,7 @@ public class Libro{
     //... impostare la java doc do ognuno
 
     // override di toString
-    public toString() {
+    public String toString() {
         return "Libro{" +
                 "_abstract='" + _abstract + '\'' +
                 ", price=" + price +
